@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@+id/header"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+		
+		<include android:id="@+id/list_intro_strip"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				layout="@layout/now_lisn_header_holder"/>
+
+</RelativeLayout>
+
+
+
+
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?> <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:orientation="horizontal" android:layout_width="wrap_content" android:weightSum="10" 
+	android:layout_height="wrap_content"> <TextView android:layout_weight="4" 
+	android:layout_width="0dip" android:focusable="false" android:focusableInTouchMode="false" 
+	android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:layout_marginLeft="10dip" 
+	android:layout_height="wrap_content" android:id="@+id/lisns" style="@style/lisnDetailHeading" 
+	/> <TextView android:layout_weight="6" android:layout_width="0dip" android:focusable="false" 
+	android:focusableInTouchMode="false" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" 
+	android:layout_marginRight="10dip" android:layout_height="wrap_content" android:layout_gravity="center_horizontal|center_vertical" 
+	android:gravity="right" android:id="@+id/created" style="@style/lisnDetailHeading" 
+	/> </LinearLayout> -->

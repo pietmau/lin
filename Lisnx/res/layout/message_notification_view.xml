@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:orientation="horizontal"
+    android:layout_height="wrap_content" >
+		
+	<TextView android:id="@+id/txtMessage"
+	   	android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:focusable="false" android:layout_gravity="center_horizontal|center_vertical"
+		android:focusableInTouchMode="false" android:layout_marginLeft="10dip"
+		android:layout_marginBottom="10dip" android:layout_marginTop="10dip"
+		style="@style/fieldText" android:singleLine="true" />
+
+</LinearLayout>

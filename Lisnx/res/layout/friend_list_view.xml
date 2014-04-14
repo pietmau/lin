@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/friendImageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/friendImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/ic_place_holder" />
+
+        <ImageView
+            android:id="@+id/loaderImageSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/ic_loading_small"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/friendDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="left|top"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/friendName"
+            style="@style/fieldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="20dip"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+        <LinearLayout
+            android:id="@+id/facebookRelativeLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/facebookLinkedinConnectionStatusLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/connectedOnText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/profileFacebookImage"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="1dp"
+                    android:text="Connected on"
+                    android:textSize="10dp"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/connectedOnFacebookImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="0dip"
+                    android:src="@drawable/connect_on_facebook"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/connectedOnLinkedinImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="1dip"
+                    android:src="@drawable/connect_on_linkedin"
+                    android:visibility="gone" />
+                 <ImageView
+                    android:id="@+id/connectedOnLisnxImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="1dip"
+                    android:src="@drawable/invite_to_lisnx"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:gravity="right"
+                >
+			
+            <LinearLayout
+                android:id="@+id/lisnxLayout"
+                style="@style/inviteToLisnxButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:gravity="right"
+                android:layout_marginLeft="0dip"
+                android:layout_marginRight="20dip"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/lisnxImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|bottom"
+                    android:layout_marginLeft="0dip"
+                    android:src="@drawable/invite_to_lisnx"
+                    android:visibility="gone"
+                     />
+
+                <TextView
+                    android:id="@+id/lisnxImageText"
+                	android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right|bottom"
+                    android:layout_marginLeft="1dp"
+                    android:text="Invite"
+                    android:singleLine="true"
+                    android:textColor="#ffffff"
+                    android:visibility="visible" />
+            </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

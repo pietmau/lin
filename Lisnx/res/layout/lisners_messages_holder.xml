@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@+id/header"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android" style="@style/listIntroductionStrip">
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+		
+		<ImageView android:id="@+id/lisnersCountIcon"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:layout_gravity="center_horizontal|center_vertical" />
+		
+		<ImageView android:id="@+id/messagesCountIcon"
+				android:layout_height="wrap_content" android:layout_width="wrap_content"
+				android:layout_marginLeft="10dip"
+				android:layout_gravity="center_horizontal|center_vertical" />
+		
+	</LinearLayout>
+
+</RelativeLayout>

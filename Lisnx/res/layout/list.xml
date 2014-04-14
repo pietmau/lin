@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/scrollMenuXml"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:fillViewport="true">
+    
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    style="@style/background">
+	
+		<include android:id="@+id/main_header"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			layout="@layout/back_header" />
+			
+		<TextView 
+		  android:id="@+id/location"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:gravity="center"
+		  style="@style/currentLocation"
+		  android:text="@string/tryGetLocation"/>
+		  
+		  <ListView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent" 
+		    android:background="#ffffffff"
+			android:cacheColorHint="#ffffffff"
+		    android:id="@+id/list"/>
+	</LinearLayout>
+</ScrollView>

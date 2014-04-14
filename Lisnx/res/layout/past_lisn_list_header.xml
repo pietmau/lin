@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@+id/header"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<include android:id="@+id/list_intro_strip"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				layout="@layout/past_lisn_header_holder"/>
+
+</RelativeLayout>

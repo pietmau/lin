@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@android:id/tabhost" 
+	android:layout_width="fill_parent"
+  	android:layout_height="fill_parent">
+  	<LinearLayout 
+  		android:orientation="vertical"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent"
+    	android:paddingTop="0dp">
+     <FrameLayout android:id="@android:id/tabcontent"
+      		android:layout_width="fill_parent" 
+      		android:layout_height="0dip"
+      		android:layout_weight="1" /> 
+    	<com.lisnx.ui.TabBarLayout
+    		android:id="@+id/maintabbar"
+    		android:layout_width="fill_parent"
+      		android:layout_height="45dp" 
+      		android:orientation="horizontal"
+      		android:background="@drawable/bg_tabbar"
+      		android:checkedButton="@+id/maintab1" >
+      		<com.lisnx.ui.TabButtonLayout
+      			android:id="@+id/now_lisn_tabbutton"
+    			android:orientation="horizontal"
+    			style="@android:style/Widget.Button"
+        		android:layout_width="0dip"
+        		android:layout_height="fill_parent"
+        		android:layout_weight="1"
+        		android:layout_margin="0dp"
+        		android:layout_gravity="center_horizontal|center_vertical"
+        		android:background="@android:color/transparent">
+        		    <ImageView
+        		    android:id="@+id/now_lisn_image"
+        			android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+        			android:scaleType="centerInside"
+    				android:adjustViewBounds="true" />  
+        	
+        		<!-- <TextView
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_alignParentBottom="true"
+        			android:layout_centerHorizontal="true" 
+        			android:text="@string/now"
+        			android:textSize="12sp" 
+        			android:textColor="#ffffffff"/> -->
+        	</com.lisnx.ui.TabButtonLayout>  
+        	
+        	<!-- <View
+      			android:layout_width="1dp"
+     			android:background="#00A3CC"
+      			android:layout_height="fill_parent" /> -->     
+      		<com.lisnx.ui.TabButtonLayout
+      			android:id="@+id/create_lisn_tabbutton"
+    			android:orientation="horizontal"
+    			style="@android:style/Widget.Button"
+        		android:layout_width="0dp"
+        		android:layout_height="fill_parent"
+        		android:layout_weight="1"
+        		android:layout_margin="0dp"
+        		android:layout_gravity="center_horizontal|center_vertical"
+        		android:background="@android:color/transparent">
+        		<ImageView
+        		    android:id="@+id/create_lisn_image"
+        			android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content"
+    				android:gravity="center|center_vertical"
+        			android:scaleType="centerInside"
+    				android:adjustViewBounds="true" />
+        		<!-- <TextView
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_alignParentBottom="true"
+        			android:layout_centerHorizontal="true" 
+        			android:text="@string/create"
+        			android:textSize="12sp"
+        			android:textColor="#ffffffff" /> -->
+        	</com.lisnx.ui.TabButtonLayout>
+        	
+        	<!-- <View
+      			android:layout_width="1dp"
+     			android:background="#00A3CC"
+      			android:layout_height="fill_parent" /> -->     
+        	<com.lisnx.ui.TabButtonLayout
+      			android:id="@+id/past_lisn_tabbutton"
+    			android:orientation="horizontal"
+    			style="@android:style/Widget.Button"
+        		android:layout_width="0dp"
+        		android:layout_height="fill_parent"
+        		android:layout_weight="1"
+        		android:layout_margin="0dp"
+        		android:layout_gravity="center_horizontal|center_vertical"
+        		android:background="@android:color/transparent">
+        		<ImageView
+        		    android:id="@+id/past_lisn_image"
+        			android:layout_width="wrap_content" 
+    				android:layout_height="wrap_content" 
+        			android:scaleType="centerInside"
+    				android:adjustViewBounds="true" />
+        		<!-- <TextView
+        			android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_alignParentBottom="true"
+        			android:layout_centerHorizontal="true" 
+        			android:text="@string/past"
+        			android:textSize="12sp" 
+        			android:textColor="#ffffffff"/> -->
+        	</com.lisnx.ui.TabButtonLayout>
+    	</com.lisnx.ui.TabBarLayout>
+     <TabWidget 
+    	android:id="@android:id/tabs"
+      	android:layout_width="0dp" 
+      	android:layout_height="0dp"
+      	android:layout_weight="1" 
+      	android:visibility="gone"
+      	android:tabStripEnabled="false" /> 
+    
+     <!-- <FrameLayout android:id="@android:id/tabcontent"
+      	android:layout_width="fill_parent" 
+      	android:layout_height="wrap_content"
+      	android:layout_weight="0" > 
+    </FrameLayout>  -->
+  </LinearLayout>
+</TabHost>
+
+<!-- android:tabStripEnabled="false" -->
+<!-- Put it in Imageview tag and replace layout_gravity
+	android:paddingBottom="10dp"
+	android:paddingTop="5dp"
+	android:layout_marginBottom="10dp" -->

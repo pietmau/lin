@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@+id/header"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android" style="@style/headerStrip">
+
+	<ImageView android:id="@+id/backIcon" android:layout_width="wrap_content"
+		android:layout_alignParentLeft="true" android:layout_height="wrap_content"
+		android:layout_marginLeft="10dip" android:src="@drawable/back_icon" />
+	<ImageView android:id="@+id/app_logo" android:layout_width="wrap_content"
+		android:layout_centerInParent="true" android:layout_height="wrap_content"
+		android:src="@drawable/app_logo" />
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_alignParentRight="true"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+			
+		<ImageView android:id="@+id/peopleNearByNotification" android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" android:src="@drawable/ic_lisners" />
+		
+		<TextView
+		    android:id="@+id/peopleNearByCountNotification" 
+		    android:layout_gravity="center_vertical|center_horizontal"
+		    android:layout_height="wrap_content" android:layout_width="wrap_content"
+		    android:textColor="#ffffff" >
+		</TextView>	
+			
+		<ImageView android:id="@+id/friendRequestNotification" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dip"
+			android:layout_marginRight="0dip" android:src="@drawable/ic_mail" />
+		
+		<TextView
+		    android:id="@+id/friendRequestCountNotification" 
+		    android:layout_gravity="center_vertical|center_horizontal"
+		    android:layout_height="wrap_content" android:layout_width="wrap_content"
+		    android:textColor="#ffffff" >
+		</TextView>	
+	
+		<ImageView android:id="@+id/refreshIcon" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="10dip"
+			android:layout_marginRight="0dip" android:src="@drawable/ic_refresh" />
+		
+	</LinearLayout>
+
+</RelativeLayout>

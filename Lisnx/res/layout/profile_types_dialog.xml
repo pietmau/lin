@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="#ff222222" android:layout_height="wrap_content"
+     android:layout_width="200dp" android:orientation="vertical">
+     
+    	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/profiletype" android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+      
+     		<RadioGroup android:id="@+id/profileRadioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:orientation="vertical">
+
+    			<RadioButton android:id="@+id/completeProfileRadioButton"
+                	 android:layout_width="wrap_content"
+                	 android:layout_height="wrap_content"
+                	 android:layout_gravity="left"
+                	 android:focusable="false"
+                 	android:text="@string/completeProfile"></RadioButton>
+
+    			<RadioButton android:id="@+id/casualProfileRadioButton"
+                 	android:layout_width="wrap_content"
+                 	android:layout_height="wrap_content"
+                 	android:layout_gravity="left"
+                 	android:focusable="false"
+                 	android:text="@string/casualProfile"></RadioButton>
+    			
+    			<RadioButton android:id="@+id/professionalProfileRadioButton"
+                	 android:layout_width="wrap_content"
+                	 android:layout_height="wrap_content"
+                	 android:layout_gravity="left"
+                	 android:focusable="false"
+                 	android:text="@string/professionalProfile"></RadioButton>
+
+    			<RadioButton android:id="@+id/emailProfileRadioButton"
+                 	android:layout_width="wrap_content"
+                 	android:layout_height="wrap_content"
+                 	android:layout_gravity="left"
+                 	android:focusable="false"
+                 	android:text="@string/emailOnlyProfile"></RadioButton>
+    			
+            	</RadioGroup>
+
+     </LinearLayout>
+     
+     <Button android:id="@+id/submitButton" android:layout_below="@+id/profiletype"
+     	android:layout_width="wrap_content" android:layout_height="wrap_content"
+     	android:layout_centerHorizontal="true" android:text="@string/submit" />
+     		
+    </RelativeLayout>

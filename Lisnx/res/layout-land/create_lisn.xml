@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:androidsam="http://schemas.android.com/apk/res/com.jameselsey"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	style="@style/background" android:orientation="vertical">
+	
+    <include android:id="@+id/main_header"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		layout="@layout/back_header" />
+	
+     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:id="@+id/scrollMenuXml"
+	  android:layout_width="fill_parent" android:layout_height="fill_parent"
+	  android:fillViewport="true" android:fadingEdge="none">
+    
+	  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">
+		
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_gravity="center_horizontal|center"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+				
+		    <EditText
+		      android:id="@+id/nameField" 
+		      android:layout_gravity="center_vertical|center_horizontal"
+		      android:layout_marginTop="20dip"
+		      android:layout_height="wrap_content" android:layout_width="fill_parent"
+		      android:layout_marginRight="5dip" android:layout_marginLeft="5dip"
+		      android:hint="@string/name" android:textColorHint="#3b64a8">		
+			</EditText>	
+			
+		    <EditText
+		      android:id="@+id/descriptionField" 
+			  android:layout_gravity="center_vertical|center_horizontal"
+			  android:layout_marginTop="20dip" android:inputType="textCapSentences"
+		      android:layout_height="wrap_content" android:layout_width="fill_parent"
+		      android:layout_marginRight="5dip" android:layout_marginLeft="5dip"
+		      android:hint="@string/description" android:textColorHint="#3b64a8">
+			</EditText>
+		    
+		    <EditText
+		      android:id="@+id/endDateAndTimePicker" 
+			  android:layout_gravity="center_vertical|center_horizontal"
+		      android:layout_height="wrap_content" android:layout_width="fill_parent"
+		      android:cursorVisible="false" android:focusable="false" 
+        	  android:focusableInTouchMode="false" android:layout_marginTop="20dip"
+		      android:layout_marginRight="5dip" android:layout_marginLeft="5dip"
+		      android:longClickable="false"
+		      android:hint="@string/endDateAndTime" android:textColorHint="#3b64a8">
+			</EditText>	
+		    
+		</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	  android:orientation="horizontal" android:layout_alignParentBottom="true"
+	  android:layout_gravity="center_horizontal|center" android:gravity="bottom"
+	  android:layout_width="wrap_content" android:layout_height="fill_parent" >
+     
+      <ImageButton
+     		android:id="@+id/cancelButton"
+     		android:layout_height="wrap_content"
+     		android:layout_width="wrap_content"
+     		android:background="@drawable/ic_cancel" />
+    
+   	  <ImageButton
+	 		android:id="@+id/createButton"
+     		android:layout_height="wrap_content"
+     		android:layout_width="wrap_content"
+     		android:background="@drawable/ic_submit" />
+     
+     </LinearLayout>
+	</LinearLayout>
+ </ScrollView>
+</LinearLayout>

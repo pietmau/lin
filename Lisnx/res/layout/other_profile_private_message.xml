@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:paddingTop="5dip" android:paddingBottom="5dip"
+	android:layout_width="wrap_content" android:layout_height="wrap_content">
+	
+	<ImageView android:id="@+id/lisnerImage" android:background="@drawable/bg_image_border"
+		android:layout_gravity="left" android:layout_marginLeft="5dip"
+		android:layout_height="wrap_content" android:layout_width="wrap_content" 
+		android:src="@drawable/ic_place_holder_small" />
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_weight="1"
+		android:orientation="vertical" android:layout_width="0dip" android:layout_height="wrap_content"
+		android:background="@drawable/bubble_left" android:layout_gravity="center_vertical|center_horizontal" >
+	
+		<TextView android:layout_width="wrap_content" style="@style/messageDateText"
+		    android:layout_marginLeft="15dip" android:layout_height="wrap_content" android:id="@+id/txtDate" />
+		
+		<TextView android:layout_width="wrap_content" style="@style/messageContentTextBlue"
+		    android:layout_marginLeft="15dip" android:layout_height="wrap_content" android:id="@+id/messageName" />
+	</LinearLayout>	
+	
+	
+</LinearLayout>

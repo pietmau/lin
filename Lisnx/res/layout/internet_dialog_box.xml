@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:layout_height="wrap_content"
+    android:padding="5dip">
+    <TextView
+        android:text="@string/noInternetWarning"
+        android:id="@+id/noInternetText"
+        android:layout_width="fill_parent"
+        android:layout_margin="5dip" android:textColor="#ffffff"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_height="wrap_content"></TextView>
+    <Button
+        android:text="@string/retryText"
+        android:id="@+id/retryInternetButton"
+        android:layout_width="wrap_content"
+        android:layout_margin="5dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:layout_height="wrap_content"></Button>
+</LinearLayout>

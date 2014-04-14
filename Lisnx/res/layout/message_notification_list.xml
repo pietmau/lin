@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:androidsam="http://schemas.android.com/apk/res/com.jameselsey"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	style="@style/background" android:orientation="vertical">
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/PNLL1" 
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical">
+
+		    
+		  <!--   
+			<include android:id="@+id/main_header" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" layout="@layout/back_header" />
+		
+			<include android:id="@+id/image_name_strip"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				layout="@layout/image_name_holder" android:layout_marginTop="5dip"/>
+				
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginTop="5dip"
+				android:layout_marginLeft="10dip">
+					
+					<RelativeLayout android:id="@+id/my_ph1"    
+						xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content">					
+					
+						<ImageView android:id="@+id/friendRequestNotificationImage" android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+		   					android:src="@drawable/ic_friendreq_gray" />
+		
+						<TextView  
+				    		android:id="@+id/friendRequestsnotificationBox"
+				    		android:layout_width="wrap_content" 
+				    		android:layout_height="wrap_content"
+				    		android:layout_alignTop="@+id/friendRequestNotificationImage"
+				    		android:layout_alignRight="@+id/friendRequestNotificationImage"
+				    		android:background="@drawable/ic_notification_icon"
+				    		android:gravity="center"
+				    		android:visibility="gone"
+				    		android:textSize="8dp"
+				    	    android:textColor="#ffffff"/>
+					</RelativeLayout> 
+		
+					<RelativeLayout android:id="@+id/my_ph1"    
+						xmlns:android="http://schemas.android.com/apk/res/android"
+						android:layout_width="wrap_content" 
+						android:layout_height="wrap_content">					
+					
+						<ImageView android:id="@+id/messageNotificationImage" android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+			   			android:src="@drawable/ic_msg_noti_blue" />
+		
+						<TextView  
+				    		android:id="@+id/messageNotificationBox"
+				    		android:layout_width="wrap_content" 
+				    		android:layout_height="wrap_content"
+				    		android:layout_alignTop="@+id/messageNotificationImage"
+				    		android:layout_alignRight="@+id/messageNotificationImage"
+				    		android:background="@drawable/ic_notification_icon"
+				    		android:gravity="center"
+				    		android:visibility="gone"
+				    		android:textSize="8dp"
+				    	    android:textColor="#ffffff"/>
+					</RelativeLayout>    
+					    
+			</LinearLayout>    
+			
+			-->
+						
+			<include android:id="@+id/list_intro_strip"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginLeft="3dip" android:layout_marginRight="3dip"
+				layout="@layout/list_introduction_holder" android:layout_marginTop="0dip"/>
+			
+			<TextView  
+				    		android:id="@+id/noMessageNotificationBox"
+				    		android:layout_width="fill_parent" 
+				    		android:layout_height="wrap_content"
+				    		android:background="@drawable/bg_strip"
+				    		android:gravity="center"
+				    		android:visibility="gone"
+				    		style="@style/fieldText"
+				    		android:text="@string/noMessageNotificationText"
+				    		android:layout_marginLeft="3dip"
+				    		android:layout_marginRight="3dip"
+				    		android:layout_marginTop="1dip"
+				    		android:paddingTop="10dip"
+				    		android:paddingBottom="10dip"/>
+			
+			<ListView
+			    android:layout_marginTop="0dip"  
+		    	android:layout_width="fill_parent" 
+		    	android:layout_height="fill_parent"
+		    	android:divider="@color/listDivider"
+				android:dividerHeight="1dp"
+				android:footerDividersEnabled="false"
+				android:headerDividersEnabled="true"
+		    	style="@style/listBackground" 
+		    	android:scrollingCache="false"
+		    	android:id="@+id/list"/>
+			
+		</LinearLayout>
+</RelativeLayout>

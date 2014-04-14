@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<color name="listDivider">#cfcfcf</color>
+<color name="listItemBackground">#F0FAFF</color>
+<color name="black">#000000</color>
+<color name="white">#ffffff</color>
+<color name="menu_normal">#ff222222</color>
+<color name="menu_focused">#ff444444</color>
+<color name="menu_pressed">#ffcccccc</color>
+<color name="message_color">#005d86ca</color>
+</resources>

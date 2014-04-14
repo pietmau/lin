@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lisnx.android.activity"
+    android:versionCode="16"
+    android:versionName="1.0.3" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <application
+        android:name="com.lisnx.util.AppCrashReports"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name" >
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- <activity
+            android:name="com.lisnx.android.activity.LoginActivityNew"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait"
+             >
+        </activity> -->
+        
+        <activity
+            android:name="com.lisnx.android.activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> 
+        <activity
+            android:name="com.lisnx.android.activity.SplashActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:configChanges="keyboard|screenSize|orientation"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.lisnx.service.ConnectivityChangedReceiver"
+            android:label="NetworkConnection" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.lisnx.service.LocationUpdater"
+            android:enabled="true" />
+
+        <!-- VISH -->
+        <service
+            android:name="com.lisnx.service.NotificationService"
+            android:enabled="true" />
+        
+        <activity
+            android:name="com.lisnx.android.activity.MenuActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.RegistrationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.lisnx.android.activity.FacebookActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" /> 
+        <activity
+            android:name="com.lisnx.android.activity.NowLisnActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.CreateLisnActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/ShadowRemoverTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.lisnx.android.activity.PastLisnActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.ui.TabView"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/ShadowRemoverTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.lisnx.ui.LisnDetailTabView"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.lisnx.ui.NotificationsTabView"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.LisnDetailActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.AboutUsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.ProfileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.OtherProfileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.lisnx.android.activity.ChangePasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.lisnx.android.activity.ChooseProfileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.lisnx.android.activity.FriendsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" 
+            android:windowSoftInputMode="stateHidden"/>
+         <activity
+            android:name="com.lisnx.android.activity.EditItemActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+         
+        <activity
+            android:name="com.lisnx.android.activity.PeopleNearByActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.NotificationsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.MessageNotificationActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.CommonLisnActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.CommonFriendsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.ForgotPasswordActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.InternetDialogActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.lisnx.android.activity.MessageBoardActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.lisnx.service.CustomToast"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.lisnx.android.activity.LinkedInActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="callback"
+                    android:scheme="x-oauthflow-linkedin" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lisnx.android.activity.SocialWizard"
+            android:label="@string/title_activity_social_wizard"
+            android:parentActivityName="com.lisnx.service.BaseActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lisnx.service.BaseActivity" />
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" >
+    </uses-feature>
+
+</manifest>

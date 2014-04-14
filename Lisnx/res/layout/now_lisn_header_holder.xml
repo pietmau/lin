@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout android:id="@+id/nowLisnCountHeader" 
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	android:orientation="horizontal" android:gravity="left|center_vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android" style="@style/imageAndNameStripLowPadding" >
+		
+		 <TextView android:id="@+id/lisns" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			style="@style/lisnDetailHeading" android:text="@string/lisnListHeader"
+			android:textSize="15sp" android:layout_marginLeft="10dip"></TextView> 
+
+		<TextView android:id="@+id/created" android:layout_width="wrap_content"
+			style="@style/lisnCountHeading" 
+			android:layout_height="wrap_content" android:textSize="15sp"
+			android:layout_marginLeft="10dip"></TextView>
+</LinearLayout>

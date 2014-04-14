@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    style="@style/imageAndNameStrip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1.5"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_place_holder" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8.3"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/userName"
+                style="@style/usernameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:layout_marginLeft="0dip"
+                android:gravity="center_vertical|left" >
+            </TextView>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/for_common_lisns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/lisnImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginLeft="5dip"
+                        android:src="@drawable/ic_common_lisns" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/commonLisnCountText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/lisnImage"
+                        android:layout_alignTop="@+id/lisnImage"
+                        android:background="@drawable/ic_notification_icon_blue"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="8dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/facebookLinkedinConnectionStatusLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/connectedOnText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/profileFacebookImage"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="1dp"
+                        android:text="Connected on"
+                        android:textColor="#ffffff"
+                        android:textSize="10dp"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/connectedOnFacebookImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginLeft="0dip"
+                        android:src="@drawable/connect_on_facebook"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/connectedOnLinkedinImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginLeft="1dip"
+                        android:src="@drawable/connect_on_linkedin"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/connectedOnLisnxImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginLeft="1dip"
+                        android:src="@drawable/invite_to_lisnx"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/for_common_friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/friendsImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginLeft="5dip"
+                        android:src="@drawable/ic_common_friends" >
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/commonFriendsCountText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/friendsImage"
+                        android:layout_alignTop="@+id/friendsImage"
+                        android:background="@drawable/ic_notification_icon_blue"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:textSize="8dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+               
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nearbyLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/nearbyIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:visibility="gone" />
+       
+
+        <TextView
+            android:id="@+id/distanceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:text="~ 0.2 miles"
+            android:visibility="gone"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>

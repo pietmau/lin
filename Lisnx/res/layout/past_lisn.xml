@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+   
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical" android:id="@+id/past_lisn_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    style="@style/background">
+	
+		<include android:id="@+id/main_header"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			layout="@layout/back_header" />
+		
+		<include android:id="@+id/past_lisn_count_strip" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginLeft="3dip" android:layout_marginRight="3dip"
+			layout="@layout/past_lisn_list_header" android:layout_marginTop="3dip"/>
+		 
+		  <ListView  
+		    android:layout_width="fill_parent" 
+		    android:layout_height="fill_parent"
+		    android:divider="@color/listDivider"
+			android:dividerHeight="1dp"
+			android:footerDividersEnabled="false"
+			android:headerDividersEnabled="true"
+		    style="@style/listBackground" 
+		    android:id="@+id/pastLisnList"/>
+	</LinearLayout>

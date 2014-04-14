@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/otherProfileLayout"
+    style="@style/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/OPL1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/main_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/back_header" />
+
+        <include
+            android:id="@+id/image_name_strip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            layout="@layout/image_name_holder_other_profile" />
+
+        <LinearLayout
+            android:id="@+id/connectionLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:orientation="vertical">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/socialButtonsLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="5dip"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/facebookConnectedText"
+                style="@style/lisnText"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:gravity="center"
+                android:text="Connect on"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/profileFacebookImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/facebook"
+                android:visibility="gone" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/profileLinkedInImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/linkedin"
+                android:visibility="gone" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/profileTwitterImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_marginLeft="5dip"
+                android:src="@drawable/ic_twitter_on"
+                android:visibility="gone" >
+            </ImageView>
+            <LinearLayout  android:layout_width="fill_parent"
+	                android:layout_height="wrap_content"
+	                android:gravity="right"
+	                android:layout_gravity="right"
+	                android:visibility="gone">
+	               
+                 <Button
+	                android:id="@+id/notifyButton"
+	                style="@style/orangeButton"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="right|bottom"
+	                android:layout_marginLeft="1dp"
+	                android:layout_marginRight="2dip"
+	                android:gravity="right|bottom"
+	                android:singleLine="true"
+	                android:text="Notify when nearby"
+	                android:visibility="visible" />
+                  <TextView
+		            android:id="@+id/whenNearbyText"
+		            style="@style/lisnText"
+                    android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="right|bottom"
+		            android:visibility="gone"
+		            android:text=" when nearby" />
+                 </LinearLayout>
+        </LinearLayout>
+         
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/OPLL9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="0dip"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/declineMessage"
+                style="@style/lisnText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="3dip"
+                android:layout_marginRight="3dip"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/ignoreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_decline" />
+
+            <ImageButton
+                android:id="@+id/acceptButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_accept" />
+
+            <ImageButton
+                android:id="@+id/connectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_connect" />
+        </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/hideButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@drawable/ic_up_arrow" />
+        
+        <LinearLayout 
+            android:id="@+id/inviteLayout"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:visibility="gone">
+             <EditText
+                android:id="@+id/inviteMessage"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="5dip"
+                android:maxLines="6"
+                android:minLines="1"
+                android:scrollbars="vertical"
+                android:visibility="visible" />
+             <TextView
+                android:id="@+id/invitationTextView"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="5dip"
+               	style="@style/lisnText"
+                android:scrollbars="vertical"
+                android:text="Your LISNx invitation has been sent!"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/inviteButton"
+                style="@style/inviteToLisnxButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="10dip"
+                android:gravity="right|bottom"
+                android:singleLine="true"
+                android:text=" Invite "
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+            
+            
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/privateMessageList"
+            style="@style/listBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/listDivider"
+            android:dividerHeight="0dp"
+            android:footerDividersEnabled="false"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll" />
+
+        <LinearLayout
+            android:id="@+id/sendMessageLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginBottom="0dip"
+            android:layout_marginTop="5dip"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <EditText
+                android:id="@+id/messageField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="5dip"
+                android:maxLines="2"
+                android:minLines="1"
+                android:scrollbars="vertical"
+                android:layout_weight="9"
+                android:visibility="visible" >
+            </EditText>
+
+            <Button
+                android:id="@+id/lisnxTextButton"
+                style="@style/inviteToLisnxButton"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="5dip"
+                android:singleLine="true"
+                android:text="Send"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/other_profile_image_expanded_include"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/profile_image_expanded" />
+
+</RelativeLayout>

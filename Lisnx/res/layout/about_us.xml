@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/aboutus" style="@style/background"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	
+
+	<include android:id="@+id/back_header" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" layout="@layout/back_header" />
+
+	<ScrollView android:id="@+id/aboutUsScroll" style="@style/aboutUsBackground"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:scrollbars="vertical" android:fillViewport="true">
+
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+		   
+
+			<ImageView android:id="@+id/about_us_logo"
+				android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+				android:layout_height="wrap_content" android:src="@drawable/ic_about_us" />
+
+			<View android:layout_marginTop="10dip" android:layout_width="wrap_content"
+				android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+				android:background="@drawable/line" android:layout_height="1dp" />
+
+			<TextView android:id="@+id/aboutText" android:layout_width="wrap_content"
+				android:layout_height="fill_parent" 
+				android:gravity="center_horizontal"
+				android:layout_marginTop="10dip" android:layout_marginLeft="15dp"
+				android:textColor="@color/black" android:layout_marginRight="15dp" />
+			
+			 <TextView
+		      		android:id="@+id/buildVersion" 
+		      		android:layout_gravity="center_vertical|center_horizontal"
+		     	 	android:layout_height="wrap_content" android:layout_width="wrap_content"
+		      		android:textColor="@color/black" >
+				</TextView>	
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

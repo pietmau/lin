@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:androidsam="http://schemas.android.com/apk/res/com.jameselsey"
+    style="@style/background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/FLL1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/main_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/back_header" />
+
+        <include
+            android:id="@+id/list_intro_strip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="3dip"
+            layout="@layout/list_introduction_holder" />
+        <!-- Editext for Search -->
+
+        <EditText
+            android:id="@+id/inputSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:hint="Search..."
+            android:inputType="textVisiblePassword" />
+
+        <TextView
+            android:id="@+id/noFriendsYetBox"
+            style="@style/fieldText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_marginRight="3dip"
+            android:layout_marginTop="1dip"
+            android:background="@drawable/bg_strip"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/noFriendsYetText"
+            android:visibility="gone" />
+
+        <com.lisnx.ui.FastSearchListView
+            android:id="@+id/list"
+            style="@style/listBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="0dip"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/listDivider"
+            android:dividerHeight="1dp"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="true" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="wrap_content" android:layout_marginTop="15dp"
+	android:layout_marginBottom="10dp" android:layout_marginLeft="10dp"
+	android:weightSum="10" android:layout_marginRight="10dp" style="@style/location">
+
+	<ImageView android:id="@+id/earthIcon"
+		android:layout_gravity="left" android:layout_weight="1"
+		android:layout_width="0dip" android:layout_height="wrap_content"
+		style="@style/locationImage" android:src="@drawable/earth_icon" />
+	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/location" android:layout_weight="8"
+		android:layout_width="0dip" android:layout_gravity="center"
+		android:layout_height="wrap_content" style="@style/currentLocation"
+		android:text="@string/tryGetLocation" android:singleLine="true"
+		android:ellipsize="marquee" />
+	<ImageView android:id="@+id/crossIcon" android:layout_weight="1"
+		android:layout_width="0dip" android:layout_gravity="right"
+		style="@style/locationImage" android:layout_height="wrap_content"
+		android:src="@drawable/cross_icon" />
+
+</LinearLayout>

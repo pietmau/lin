@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:androidsam="http://schemas.android.com/apk/res/com.jameselsey"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	style="@style/background" android:orientation="vertical">
+	
+    <include android:id="@+id/main_header" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" layout="@layout/back_header" />
+	
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/scrollLoginXml" android:scrollbarSize="3dip"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:fillViewport="true" android:fadingEdge="none">
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/CPLL1" android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		
+		<include android:id="@+id/image_name_strip"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			layout="@layout/image_name_holder" android:layout_marginTop="5dip"/>
+		
+		<TextView android:id="@+id/shareProfileTypeText" 
+			android:layout_gravity="center_horizontal" android:layout_marginTop="10dip"
+			android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			android:text="@string/chooseProfileShareTypeText" style="@style/fieldText" />
+		
+		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/CPLL3" android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+		
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/CPLL4" android:orientation="vertical"
+				android:layout_marginTop="15dip" android:layout_gravity="left|center_vertical"
+				android:layout_width="wrap_content" android:layout_height="wrap_content">
+      
+     			<RadioGroup android:id="@+id/profileRadioGroup"
+            		android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:layout_marginLeft="10dip"
+           			android:orientation="vertical" >
+           			
+     			    <RadioButton android:id="@+id/casualProfileRadioButton"
+                 		android:layout_width="wrap_content"
+                 		android:layout_height="wrap_content" 
+                 		android:layout_gravity="left|center_vertical" android:button="@drawable/radio_selector"
+                 		android:focusable="false"></RadioButton>
+     			    
+     			    <RadioButton android:id="@+id/professionalProfileRadioButton"
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content" android:layout_marginTop="15dip"
+                		android:layout_gravity="left|center_vertical" android:button="@drawable/radio_selector"
+                		android:focusable="false"></RadioButton>
+    			    
+    			    <RadioButton android:id="@+id/emailProfileRadioButton"
+                 		android:layout_width="wrap_content"
+                 		android:layout_height="wrap_content" android:layout_marginTop="15dip"
+                 		android:layout_gravity="left|center_vertical" android:button="@drawable/radio_selector"
+                 		android:focusable="false"></RadioButton>
+    			
+    			    <RadioButton android:id="@+id/completeProfileRadioButton"
+                		android:layout_width="wrap_content"
+                		android:layout_height="wrap_content" android:layout_marginTop="15dip"
+                		android:layout_gravity="left|center_vertical" android:button="@drawable/radio_selector"
+                		android:focusable="false"></RadioButton>
+    			
+            	</RadioGroup>
+
+     		</LinearLayout>
+     		
+		    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			   android:id="@+id/CPLL5" android:orientation="vertical"
+			   android:layout_gravity="center_horizontal|center_vertical" android:layout_marginTop="15dip"
+			   android:layout_width="wrap_content" android:layout_height="wrap_content">
+     			
+		        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:id="@+id/CPLL7" android:orientation="horizontal"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+
+    				<ImageView android:id="@+id/casualProfileImage" 
+		        		android:layout_gravity="center_vertical|center_horizontal"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:layout_marginLeft="10dip" android:src="@drawable/ic_casual">
+		    		</ImageView>
+		    		
+    				<ImageView android:id="@+id/facebookImage" 
+		        		android:layout_gravity="center_vertical|center_horizontal"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:layout_marginLeft="10dip" android:src="@drawable/facebook_m">
+		    		</ImageView>
+		    		
+    				<ImageView android:id="@+id/twitterImage" 
+		        		android:layout_gravity="center_vertical|center_horizontal" android:visibility="gone"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:layout_marginLeft="10dip" android:src="@drawable/ic_twitter_on">
+		    		</ImageView>
+    				
+    			</LinearLayout>
+    			
+		        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:id="@+id/CPLL9" android:orientation="horizontal" 
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginTop="10dip">
+    				
+    				<ImageView android:id="@+id/professionalProfileImage" 
+		        		android:layout_gravity="center_vertical|center_horizontal" 
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:layout_marginLeft="10dip" android:src="@drawable/ic_professional">
+		    		</ImageView>
+		    		
+    				<ImageView android:id="@+id/linkedinImage" 
+		        		android:layout_gravity="center_vertical|center_horizontal"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:layout_marginLeft="10dip" android:src="@drawable/ic_linked_on">
+		    		</ImageView>
+    			
+    			</LinearLayout>
+    			
+		        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:id="@+id/CPLL8" android:orientation="horizontal"
+					android:layout_marginTop="10dip"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+    			
+    				<ImageView android:id="@+id/emailOnlyProfileImage" 
+		        		android:layout_gravity="center_vertical|center_horizontal"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:layout_marginLeft="10dip" android:src="@drawable/ic_email_only">
+		    		</ImageView>
+		    	
+    				<ImageView android:id="@+id/emailImage" 
+		        		android:layout_gravity="center_vertical|center_horizontal"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:layout_marginLeft="10dip" android:src="@drawable/ic_email_on">
+		    		</ImageView>
+    			
+    			</LinearLayout>
+		
+		       <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				   android:id="@+id/CPLL6" android:orientation="horizontal"
+				   android:layout_marginTop="10dip" android:paddingBottom="10dip"
+				   android:layout_width="fill_parent" android:layout_height="wrap_content">
+     		    
+		           <ImageView android:id="@+id/completeProfileImage" 
+		        		android:layout_gravity="center_vertical|center_horizontal"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:layout_marginLeft="10dip" android:src="@drawable/ic_complete">
+		    		</ImageView>
+		    		
+    			    <ImageView android:id="@+id/facebookImage" 
+		        		android:layout_gravity="center_vertical|center_horizontal"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:layout_marginLeft="10dip" android:src="@drawable/facebook_m">
+		    		</ImageView>
+		    		
+    			    <ImageView android:id="@+id/linkedinImage" 
+		        		android:layout_gravity="center_vertical|center_horizontal"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:layout_marginLeft="10dip" android:src="@drawable/ic_linked_on">
+		    		</ImageView>
+		    		
+    			    <ImageView android:id="@+id/twitterImage" 
+		        		android:layout_gravity="center_vertical|center_horizontal" android:visibility="gone"
+						android:layout_width="wrap_content" android:layout_height="wrap_content" 
+						android:layout_marginLeft="10dip" android:src="@drawable/ic_twitter_on">
+		    		</ImageView>
+     		    
+     		   </LinearLayout>
+  		   </LinearLayout>    
+     		
+		</LinearLayout>
+		
+				<View
+	  				android:layout_marginTop="20dip"
+     				android:layout_width="wrap_content"
+      				android:layout_marginLeft="0dp"
+      				android:layout_marginRight="0dp"
+      				android:background="@drawable/white_line"
+      				android:layout_height="1dp" />
+     		
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:orientation="horizontal" android:layout_gravity="right|center"
+				android:layout_width="wrap_content" android:layout_height="fill_parent">
+
+				<ImageButton android:id="@+id/selectButton"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:background="@drawable/ic_submit" />
+
+			</LinearLayout>
+		
+     	</LinearLayout>
+    </ScrollView>
+</LinearLayout>

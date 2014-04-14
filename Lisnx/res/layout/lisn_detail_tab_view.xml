@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:orientation="vertical" android:id="@+id/now_lisn_view"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    style="@style/background">
+	 
+    <include android:id="@+id/main_header"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			layout="@layout/back_header" />
+    
+    <!-- <include android:id="@+id/image_name_strip"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			layout="@layout/image_name_holder" android:layout_marginTop="2dip"/> -->
+    
+    <include android:id="@+id/for_lisn_header" android:layout_marginTop="2dip"
+        	android:layout_marginLeft="3dip" android:layout_marginRight="3dip"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			layout="@layout/lisn_heading_holder" />
+    
+    <include android:id="@+id/LDD" android:layout_marginTop="2dip"
+        	android:layout_marginLeft="3dip" android:layout_marginRight="3dip"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			layout="@layout/lisn_detail_date" />
+    
+    <include android:id="@+id/LDT"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			layout="@layout/lisn_detail_text" />
+    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_gravity="center_horizontal" 
+		android:gravity="center_horizontal|center_vertical" android:layout_marginBottom="0dip"
+		android:orientation="horizontal" android:layout_marginTop="0dip"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+    	    
+    	<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+		 	android:id="@+id/txtView" android:layout_width="wrap_content"
+		  	android:layout_height="wrap_content" android:textColor="#000000"
+		  	android:visibility="gone" />
+    
+    	<ImageButton  style="@style/lisnButtonText" android:visibility="gone"
+	    	android:layout_marginRight="1dip" android:focusable="false" android:focusableInTouchMode="false"
+			android:layout_marginLeft="5dip"
+			android:layout_height="wrap_content" android:id="@+id/joinLisnButton" />
+    
+    </LinearLayout>
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" android:layout_height="wrap_content"	>
+    
+	<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@android:id/tabhost"
+		android:layout_width="fill_parent"
+  		android:layout_height="fill_parent">
+	  	<LinearLayout 
+	  		android:orientation="vertical"
+	    	android:layout_width="fill_parent" 
+	    	android:layout_height="fill_parent"
+	    	android:paddingTop="0dp">
+	    	<com.lisnx.ui.LisnDetailTabBarLayout
+	    		android:id="@+id/maintabbar"
+	    		android:layout_width="wrap_content"
+	      		android:layout_height="55dp" 
+	      		android:orientation="horizontal"
+	      		android:layout_marginLeft="3dip"
+	      		android:layout_marginTop="2dip"
+	      		android:background="@drawable/bg_tabbar_lisn_detail"
+	      		android:checkedButton="@+id/maintab1" >
+	    	    
+	    	    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+	    	    
+	      		<com.lisnx.ui.LisnDetailTabButtonLayout
+	      			android:id="@+id/lisner_tabbutton"
+	    			android:orientation="horizontal"
+	    			style="@android:style/Widget.Button"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="fill_parent"
+	        		android:layout_weight="1"
+	        		android:layout_margin="0dp"
+	        		android:layout_gravity="center_horizontal|center_vertical"
+	        		android:background="@drawable/bg_gray_tab_button_lisn_detail">
+	        		    <ImageView
+	        		    android:id="@+id/lisner_image"
+	        			android:layout_width="wrap_content" 
+	    				android:layout_height="wrap_content"
+	    				android:layout_marginTop="5dp"
+	    				android:layout_marginBottom="5dp"
+	        			android:scaleType="centerInside"
+	    				android:adjustViewBounds="true" />  
+        		</com.lisnx.ui.LisnDetailTabButtonLayout>  
+        		
+	      		<TextView  
+		    		android:id="@+id/lisnerCount"
+		    		android:layout_width="wrap_content" 
+		    		android:layout_height="wrap_content" 
+		    		android:layout_alignTop="@+id/lisner_tabbutton"
+		    		android:layout_alignRight="@+id/lisner_tabbutton"
+		    		android:background="@drawable/ic_notification_icon_gray"
+		    		android:gravity="center"
+		    		android:textSize="8dp"
+		    	    android:textColor="#ffffff" 
+		    	    android:layout_marginRight="5dp"/>
+        		
+	      		</RelativeLayout>
+	      		
+	    	    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="wrap_content" android:layout_height="wrap_content">
+	      			     
+	      		<com.lisnx.ui.LisnDetailTabButtonLayout
+	      			android:id="@+id/message_tabbutton"
+	    			android:orientation="horizontal"
+	    			style="@android:style/Widget.Button"
+	        		android:layout_width="wrap_content"
+	        		android:layout_height="fill_parent"
+	        		android:layout_weight="1"
+	        		android:layout_margin="0dp"
+	        		android:layout_gravity="center_horizontal|center_vertical"
+	        		android:background="@drawable/bg_gray_tab_button_lisn_detail">
+	        		<ImageView
+	        		    android:id="@+id/message_image"
+	        			android:layout_width="wrap_content" 
+	    				android:layout_height="wrap_content"
+	    				android:layout_marginTop="5dp"
+	    				android:layout_marginBottom="5dp"
+	    				android:gravity="center|center_vertical"
+	        			android:scaleType="centerInside"
+	    				android:adjustViewBounds="true" />
+        		</com.lisnx.ui.LisnDetailTabButtonLayout>
+        		
+	      		<TextView  
+		    		android:id="@+id/messageCount"
+		    		android:layout_width="wrap_content" 
+		    		android:layout_height="wrap_content" 
+		    		android:layout_alignTop="@+id/message_tabbutton"
+		    		android:layout_alignRight="@+id/message_tabbutton"
+		    		android:gravity="center"
+		    		android:textSize="8dp"
+		    	    android:textColor="#ffffff" 
+		    	    android:layout_marginRight="5dp"/>
+        		
+	      		</RelativeLayout>
+	      		
+    		</com.lisnx.ui.LisnDetailTabBarLayout>
+      		
+      		<include android:id="@+id/list_intro_strip"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_marginLeft="3dip" android:layout_marginRight="3dip"
+				layout="@layout/list_introduction_holder" />
+    	
+		     <TabWidget 
+		    	android:id="@android:id/tabs"
+		      	android:layout_width="0dp" 
+		      	android:layout_height="0dp"
+		      	android:layout_weight="1" 
+		      	android:visibility="gone" /> 
+	      	
+		     <FrameLayout android:id="@android:id/tabcontent"
+		      	android:layout_width="fill_parent" 
+		      	android:layout_height="0dip"
+		      	android:layout_weight="1" /> 
+  		</LinearLayout>
+	</TabHost>
+	
+	<ImageButton
+	 			android:id="@+id/hideButton" android:layout_alignParentRight="true"
+     			android:layout_height="wrap_content"
+     			android:layout_width="wrap_content"
+     			android:layout_alignRight="@android:id/tabhost"
+     			android:background="@drawable/ic_up_arrow"
+     			android:layout_marginRight="3dip" />
+	
+	</RelativeLayout>
+</LinearLayout>

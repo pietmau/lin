@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/EditItem" 
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical"
+			android:gravity="center_vertical|center_horizontal"
+			style="@style/background">
+
+		
+		
+			
+    <EditText android:id="@+id/inputValue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter new value.."
+        android:layout_marginLeft="3dip"
+				android:layout_marginRight="3dip"
+				android:inputType="textVisiblePassword"
+				/>
+  
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_width="fill_parent" android:layout_marginRight="5dp"
+			android:layout_height="wrap_content" android:gravity="right">
+			
+		    <Button android:layout_width="wrap_content" android:layout_gravity="center_horizontal"
+				android:text="Save"
+				android:layout_height="wrap_content" android:id="@+id/saveButton" />
+			
+		    <Button android:layout_width="wrap_content"
+				android:text="Cancel" android:layout_gravity="center_horizontal"
+				android:layout_height="wrap_content" android:id="@+id/cancelButton" />
+		</LinearLayout>		
+		
+			
+		</LinearLayout>

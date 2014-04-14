@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:androidsam="http://schemas.android.com/apk/res/com.jameselsey"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	style="@style/background" android:orientation="vertical">
+	
+   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/scrollLoginXml" android:scrollbarSize="3dip"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:fillViewport="true">
+	
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/OPL1" android:orientation="vertical" 
+     android:layout_width="fill_parent" android:layout_height="fill_parent">
+    
+    <include android:id="@+id/main_header"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		layout="@layout/back_header" />
+	
+    		<include android:id="@+id/image_name_strip"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			layout="@layout/image_name_holder" android:layout_marginTop="5dip"/>
+			
+    		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_gravity="left"
+			android:layout_marginTop="10dip"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+	
+	    <RelativeLayout android:id="@+id/for_common_lisns"    
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			
+	        <ImageView android:id="@+id/lisnImage" 
+		        	android:layout_gravity="center_vertical|center_horizontal"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:layout_marginLeft="20dip" android:src="@drawable/ic_common_lisns">
+		    </ImageView>
+		    
+	        <!-- <ImageView  
+    		android:id="@+id/notificationBoxCommonLisns"
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:visibility="gone"
+    		android:layout_alignTop="@+id/lisnImage"
+    		android:layout_alignRight="@+id/lisnImage"
+    	    android:background="@drawable/ic_notification_icon"/> -->
+		
+		<TextView  
+    		android:id="@+id/commonLisnCountText"
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:layout_alignTop="@+id/lisnImage"
+    		android:layout_alignRight="@+id/lisnImage"
+    		android:background="@drawable/ic_notification_icon"
+    		android:gravity="center"
+    		android:visibility="gone"
+    		android:textSize="8dp"
+    	    android:textColor="#ffffff" />
+		
+		</RelativeLayout>
+		
+	    <TextView
+		      	android:id="@+id/textForCommonLisns" 
+		      	android:layout_gravity="center_vertical|center_horizontal" android:layout_marginLeft="20dip"
+		     	android:layout_height="wrap_content" android:layout_width="wrap_content"
+		     	style="@style/fieldText" android:text="@string/textForCommonLisns">
+		</TextView>	
+		
+	    </LinearLayout>
+	    
+    			<View
+	  				android:layout_marginTop="10dip"
+     				android:layout_width="wrap_content"
+      				android:layout_marginLeft="0dp"
+      				android:layout_marginRight="0dp"
+      				android:background="@drawable/white_line"
+      				android:layout_height="1dp" />
+	    
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_gravity="left"
+			android:layout_marginTop="20dip"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+		
+	    <RelativeLayout android:id="@+id/for_common_friends"    
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+		
+	        <ImageView android:id="@+id/friendsImage" 
+		        	android:layout_gravity="center_vertical|center_horizontal"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:layout_marginLeft="20dip" android:src="@drawable/ic_common_friends">
+		    </ImageView>
+		    
+	        <!-- <ImageView  
+    		android:id="@+id/notificationBoxCommonFriends"
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:visibility="gone"
+    		android:layout_alignTop="@+id/friendsImage"
+    		android:layout_alignRight="@+id/friendsImage"
+    	    android:background="@drawable/ic_notification_icon"/> -->
+		
+		<TextView  
+    		android:id="@+id/commonFriendsCountText"
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:layout_alignTop="@+id/friendsImage"
+    		android:layout_alignRight="@+id/friendsImage"
+    		android:background="@drawable/ic_notification_icon"
+    		android:gravity="center"
+    		android:visibility="gone"
+    		android:textSize="8dp"
+    	    android:textColor="#ffffff" />
+		
+		</RelativeLayout>
+		
+	    <TextView
+		      	android:id="@+id/textForCommonFriends" 
+		      	android:layout_gravity="center_vertical|center_horizontal" android:layout_marginLeft="20dip"
+		     	android:layout_height="wrap_content" android:layout_width="wrap_content"
+		     	style="@style/fieldText" android:text="@string/textForCommonFriends">
+		</TextView>
+		
+	    </LinearLayout>
+		    
+    		
+    		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/OPLL1" android:layout_gravity="center_horizontal|center"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" 
+				android:orientation="horizontal" android:layout_marginTop="10dip">
+		    
+		    	<ImageView android:id="@+id/profileEmailImage" 
+		        	android:layout_gravity="center_vertical|center_horizontal" android:visibility="gone"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:layout_marginLeft="30dip" android:src="@drawable/ic_email_on">
+		    	</ImageView>
+		    	
+		    	<TextView
+		      		android:id="@+id/profileEmailText"
+		      		android:layout_gravity="center_vertical|center_horizontal" android:visibility="gone"
+		     	 	android:layout_height="wrap_content" android:layout_width="wrap_content"
+		      	    android:layout_marginLeft="20dip" style="@style/fieldText">
+				</TextView>	
+		    
+		    </LinearLayout>
+		    
+    		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/OPLL2" android:layout_gravity="center_horizontal|center"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" 
+				android:orientation="horizontal" android:layout_marginTop="10dip">
+		    
+		    	<ImageView android:id="@+id/profileFacebookImage" 
+		        	android:layout_gravity="center_vertical|center_horizontal" android:visibility="gone"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:layout_marginLeft="30dip" android:src="@drawable/facebook_m">
+		    	</ImageView>
+		    	
+		    	<TextView
+		      		android:id="@+id/profileFacebookText"
+		      		android:layout_gravity="center_vertical|center_horizontal"  android:visibility="gone"
+		     	 	android:layout_height="wrap_content" android:layout_width="wrap_content"
+		      	    android:layout_marginLeft="20dip" style="@style/fieldText">
+				</TextView>	
+		    
+		    </LinearLayout>
+		    
+    		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/OPLL3" android:layout_gravity="center_horizontal|center"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" 
+				android:orientation="horizontal" android:layout_marginTop="10dip">
+		    
+		    	<ImageView android:id="@+id/profileLinkedInImage" 
+		        	android:layout_gravity="center_vertical|center_horizontal" android:visibility="gone"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:layout_marginLeft="30dip" android:src="@drawable/ic_linked_on">
+		    	</ImageView>
+		    	
+		    	<TextView
+		      		android:id="@+id/profileLinkedInText"
+		      		android:layout_gravity="center_vertical|center_horizontal" android:visibility="gone"
+		     	 	android:layout_height="wrap_content" android:layout_width="wrap_content"
+		      	    android:layout_marginLeft="20dip" style="@style/fieldText">
+				</TextView>	
+		    
+		    </LinearLayout>
+		    
+    		<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:id="@+id/OPLL4" android:layout_gravity="center_horizontal|center"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" 
+				android:orientation="horizontal" android:layout_marginTop="10dip"
+				android:visibility="gone">
+		    
+		    	<ImageView android:id="@+id/profileTwitterImage" 
+		        	android:layout_gravity="center_vertical|center_horizontal" android:visibility="gone"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:layout_marginLeft="30dip" android:src="@drawable/ic_twitter_on">
+		    	</ImageView>
+		    	
+		    	<TextView
+		      		android:id="@+id/profileTwitterText"
+		      		android:layout_gravity="center_vertical|center_horizontal" android:visibility="gone"
+		     	 	android:layout_height="wrap_content" android:layout_width="wrap_content"
+		      	    android:layout_marginLeft="20dip" style="@style/fieldText">
+				</TextView>	
+		    
+		    </LinearLayout>
+		    
+    			<View
+	  				android:layout_marginTop="10dip"
+     				android:layout_width="wrap_content"
+      				android:layout_marginLeft="0dp"
+      				android:layout_marginRight="0dp"
+      				android:background="@drawable/white_line"
+      				android:layout_height="1dp" />
+		
+	    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:id="@+id/OPLL9" android:layout_gravity="right"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			android:orientation="horizontal" android:layout_marginTop="0dip">
+		    	
+	    	<ImageButton
+	 			android:id="@+id/acceptButton"
+     			android:layout_height="wrap_content"
+     			android:layout_width="wrap_content"
+     			android:background="@drawable/ic_accept"/>
+	    	
+	    	<ImageButton
+	 			android:id="@+id/connectButton"
+     			android:layout_height="wrap_content"
+     			android:layout_width="wrap_content"
+     			android:background="@drawable/ic_connect"/>
+	    
+	    </LinearLayout>
+    
+  </LinearLayout>
+  </ScrollView>
+</RelativeLayout>

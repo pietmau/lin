@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:androidsam="http://schemas.android.com/apk/res/com.jameselsey"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	style="@style/background" android:orientation="vertical">
+	
+  <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:id="@+id/settings" android:orientation="vertical"
+      android:layout_width="fill_parent" android:layout_height="fill_parent" >
+    
+    <include android:id="@+id/main_header"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		layout="@layout/back_header"/>
+
+    	<include android:id="@+id/image_name_strip"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			layout="@layout/image_name_holder" android:layout_marginTop="5dip"/>
+		
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+				android:id="@+id/SLL2" android:layout_gravity="center_horizontal|center"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:layout_marginTop="15dip">
+			
+		    	<ImageView android:id="@+id/emailOnlyImage" 
+		        	android:layout_gravity="center_vertical|center_horizontal" 
+		        	android:gravity="left"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					android:layout_marginLeft="15dip" android:src="@drawable/ic_email_only">
+		    	</ImageView>
+		    
+		    	<TextView
+		      		android:id="@+id/userEmail" 
+		      		android:layout_gravity="center_vertical|center_horizontal"
+		      		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		      		android:layout_marginRight="20dip" android:layout_marginLeft="15dip"
+		      		style="@style/fieldText" android:textSize="20dip">
+				</TextView>	
+			</LinearLayout>
+			
+			<View
+	  			android:layout_marginTop="15dip"
+     			android:layout_width="wrap_content"
+      			android:layout_marginLeft="0dp"
+      			android:layout_marginRight="0dp"
+      			android:background="@drawable/white_line"
+      			android:layout_height="1dp" />
+			
+			<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+				android:id="@+id/SLL3" android:layout_gravity="center_horizontal|center"
+				android:layout_width="fill_parent" android:layout_height="wrap_content" 
+				android:orientation="vertical" android:layout_marginTop="20dip">
+			
+		    	<TextView android:id="@+id/changePasswordText" android:textSize="20dip"
+			  		android:layout_gravity="left" android:layout_marginLeft="15dip"
+			  		android:layout_width="wrap_content" android:layout_height="wrap_content" 
+			  		android:text="@string/changePassword" style="@style/fieldText" />
+		    	
+		    	<View
+	  				android:layout_marginTop="20dip"
+     				android:layout_width="wrap_content"
+      				android:layout_marginLeft="0dp"
+      				android:layout_marginRight="0dp"
+      				android:background="@drawable/white_line"
+      				android:layout_height="1dp" />
+		    
+		    	<TextView
+		      		android:id="@+id/autoshareLocationText" android:layout_marginTop="20dip"
+		      		android:layout_gravity="left" android:textSize="20dip"
+		      		android:layout_marginLeft="15dip" android:visibility="gone"
+		      		android:layout_height="wrap_content" android:layout_width="wrap_content"
+		      		style="@style/fieldText" android:text="@string/locationShare">
+				</TextView>	
+				
+		    	<View
+	  				android:layout_marginTop="20dip"
+     				android:layout_width="wrap_content"
+      				android:layout_marginLeft="0dp" android:visibility="gone"
+      				android:layout_marginRight="0dp"
+      				android:background="@drawable/white_line"
+      				android:layout_height="1dp" />
+		</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

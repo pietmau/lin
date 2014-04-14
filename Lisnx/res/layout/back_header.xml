@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout android:id="@+id/header"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android" style="@style/headerStrip">
+	
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_alignParentLeft="true"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+	<ImageView android:id="@+id/backIcon" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+	    android:src="@drawable/back_icon" />
+	
+	<ImageView android:id="@+id/instantBackButton" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:visibility="gone"
+		android:src="@drawable/ic_back_arrow" />
+	</LinearLayout>
+	
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			android:orientation="horizontal" android:layout_alignParentRight="true"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+	
+	    <RelativeLayout android:id="@+id/my_ph1"    
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			
+		<ImageView android:id="@+id/peopleNearByNotification" android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" android:src="@drawable/ic_people_nearby" />
+		
+		<TextView  
+    		android:id="@+id/notificationBoxTextPeople"
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:layout_alignTop="@+id/peopleNearByNotification"
+    		android:layout_alignRight="@+id/peopleNearByNotification"
+    		android:background="@drawable/ic_notification_icon"
+    		android:gravity="center"
+    		android:visibility="gone"
+    		android:textSize="9dp"
+    	    android:textColor="#ffffff"/>
+		</RelativeLayout> 
+		
+		<TextView
+		    android:id="@+id/peopleNearByCountNotification" 
+		    android:layout_gravity="center_vertical|center_horizontal"
+		    android:layout_height="wrap_content" android:layout_width="wrap_content"
+		    android:textColor="#ffffff" android:visibility="gone">
+		</TextView>	
+		
+		<RelativeLayout android:id="@+id/my_ph2"    
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content">
+			
+		<ImageView android:id="@+id/friendRequestNotification" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginLeft="0dip"
+			android:layout_marginRight="0dip" android:src="@drawable/ic_mail" />
+		
+		<TextView  
+    		android:id="@+id/notificationBoxTextNotifications"
+    		android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content" 
+    		android:layout_alignTop="@+id/friendRequestNotification"
+    		android:layout_alignRight="@+id/friendRequestNotification"
+    		android:background="@drawable/ic_notification_icon"
+    		android:gravity="center"
+    		android:visibility="gone"
+    		android:textSize="9dp"
+    	    android:textColor="#ffffff" />
+		</RelativeLayout>
+		
+		<TextView
+		    android:id="@+id/friendRequestCountNotification" 
+		    android:layout_gravity="center_vertical|center_horizontal"
+		    android:layout_height="wrap_content" android:layout_width="wrap_content"
+		    android:textColor="#ffffff" android:visibility="gone">
+		</TextView>	
+	</LinearLayout>
+</RelativeLayout>
